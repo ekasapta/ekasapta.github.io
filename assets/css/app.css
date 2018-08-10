@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600');
+@import url('./fa/css/font-awesome.min.css');
+@import url('./main.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    transition: all .2s;
+    box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height:100%;
+}
+h1 { font-size: 80px; }
+h4 { font-size: 30px; }
+body {
+    background-color: #fafafa;
+    color: #34495e;
+    font-family: 'Raleway', sans-serif;
+}
+nav {
+    position: absolute;
+    width: 100%;
+    z-index: 9999;
+}
+nav > .container > .parentNav{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+nav li {
+    list-style: none;
+}
+nav a {
+    padding: 0 10px;
+    text-decoration: none;
+    color: #fff;
+}
+nav a:hover {
+    text-decoration: none;
+    color: #34495e;
+}
+.firstWrap {
+    background: #ff9966;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    position: relative;
+    height: 100vh;
+}
+.firstWrap #leftCircle {
+    width:250px;
+    height:250px;
+    position: absolute;
+    top:7%;
+}
+.firstWrap .contentFirstWrap h1 {
+    color: #fff;
+    text-shadow: -4px 5px 10px rgba(0, 0, 0, 0.10);
+}
+.firstWrap .contentFirstWrap h1 span {
+    font-weight: bolder;
+}
+.firstWrap .contentFirstWrap .largeFont {
+    line-height: 90px;
+    padding-bottom: 40px;
+    z-index: 1;
+    position: relative;
+}
+.firstWrap .contentFirstWrap div > p > a {
+    color: #fff;
+    text-decoration: none;
+}
+.firstWrap .contentFirstWrap {
+    line-height: 40px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.firstWrap .rocketMoon {
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1;
+}
+.firstWrap .rocketMoon svg {
+    width:300px;
+}
+/* Second Wrap */
+.secondWrap {
+    display: flex;
+    align-items: center;
+    color: #34495e;
+    height:450px;
+}
+.secondWrap .content h4 {
+    font-weight: bold;
+    text-align: center;
+}
+.secondWrap .content div {
+    text-align: center;
+}
+.secondWrap .content .webTools {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+}
+.secondWrap .content .webTools div {
+    padding: 10px;
+    box-shadow: 0 2px 4px 0 rgba(14,30,37,.12);
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right:15px;
+    font-weight: 700;
+    border-radius: 3px;
+}
+.secondWrap .content .webTools div:nth-child(1) {
+    background-color: #908fc1;
+    color: #fff;
+}
+.secondWrap .content .webTools div:nth-child(2) {
+    background-color: #86dfe9;
+}
+.secondWrap .content .webTools div:nth-child(3) {
+    background-color: #f7df1e;
+}
+.secondWrap .content .webTools div:nth-child(4) {
+    background-color: #5d87a1;
+    color: #fff;
+}
+.secondWrap .content .webTools div:last-child {
+    margin-right: 0;
+}
+/* ThirdWrap */
+.thirdWrap {
+    background-color: #fff;
+}
+.thirdWrap .contentProject {
+    padding: 80px 0;
+}
+.thirdWrap .contentProject div:last-child {
+    text-align: center;
+    font-size: 18px;
+}
+.thirdWrap .contentProject div:last-child .seeAllMyProject {
+    color: #34495e;
+}
+.thirdWrap .contentProject div:last-child .seeAllMyProject:hover {
+    color: #2980b9;
+    text-decoration: none;
+}
+.thirdWrap .contentProject .right {
+    position: relative;
+    display: flex;
+    width:100%;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 80px 0;
+}
+.thirdWrap .contentProject .left {
+    position: relative;
+    display: flex;
+    width:100%;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 80px 0;
+}
+.thirdWrap .contentProject .right #coverProject, .thirdWrap .contentProject .left #coverProject {
+    width:calc(100% - 20%);
+    height:450px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 3px;
+    object-fit: cover;
+    box-shadow: 0 0 4.236em rgba(14,30,37,.09);
+}
+.thirdWrap .contentProject .right .titleProject {
+    margin-right: -200px;
+    position: relative;
+    z-index: 1;
+    width: 400px;
+}
+.thirdWrap .contentProject .right .titleProject h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+.thirdWrap .contentProject .right .titleProject a.viewProject {
+    color: #34495e;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.thirdWrap .contentProject .right .titleProject a.viewProject:hover {
+    color: #2980b9;
+}
+.thirdWrap .contentProject .right .titleProject a.viewProject::after {
+    border-bottom: 3px solid #2980b9;
+    display: table;
+    content: "";
+    width:40px;
+}
+.thirdWrap .contentProject .right .titleProject .linkProject {
+    margin-right: 230px;
+    margin-top: 40px;
+}
+.thirdWrap .contentProject .right .titleProject .linkProject li {
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+}
+.thirdWrap .contentProject .right .titleProject .linkProject a {
+    font-size: 20px;
+    padding: 15px 0;
+    color: #34495e;
+}
+.thirdWrap .contentProject .right .titleProject .linkProject a:hover {
+    color: #2980b9;
+}
+/* Left */
+.thirdWrap .contentProject .left .titleProject {
+    margin-left: -190px;
+    position: relative;
+    z-index: 1;
+    width: 400px;
+    text-align: right;
+}
+.thirdWrap .contentProject .left .titleProject h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+.thirdWrap .contentProject .left .titleProject a.viewProject {
+    color: #34495e;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.thirdWrap .contentProject .left .titleProject a.viewProject:hover {
+    color: #2980b9;
+}
+.thirdWrap .contentProject .left .titleProject a.viewProject::after {
+    border-bottom: 3px solid #2980b9;
+    display: table;
+    content: "";
+    width:40px;
+    right: 0;
+    margin-top:2px;
+    position: absolute;
+}
+.thirdWrap .contentProject .left .titleProject .linkProject {
+    margin-left: 230px;
+    margin-top: 40px;
+}
+.thirdWrap .contentProject .left .titleProject .linkProject li {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-end;
+}
+.thirdWrap .contentProject .left .titleProject .linkProject a {
+    font-size: 20px;
+    padding: 15px 0;
+    color: #34495e;
+}
+.thirdWrap .contentProject .left .titleProject .linkProject a:hover {
+    color: #2980b9;
+}
+/* FourthWrap */
+.fourthWrap {
+    padding: 80px 0;
+}
+.fourthWrap .content .titleSection, .fourthWrap .content .subSection {
+    text-align: center;
+}
+.fourthWrap .content .subSectionPlatform {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.fourthWrap .content .subSectionPlatform li {
+    list-style: none;
+}
+.fourthWrap .content .subSectionPlatform a {
+    padding: 10px;
+    font-size: 20px;
+    color:#34495e;
+}
+.fourthWrap .content .formSection {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+.fourthWrap .content .formSection form {
+    width: 500px;
+    position: relative;
+}
+.fourthWrap .content .formSection form #alertForm {
+    background-color: #e74c3c;
+    border-radius: 3px;
+    color: #fff;
+    padding: 10px 20px;
+    display: none;
+    margin-bottom: 15px;
+}
+.fourthWrap .content .formSection .formControl {
+    width: 100%;
+    padding: 10px 45px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.fourthWrap .content .formSection .formControl:focus {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.123);
+}
+.fourthWrap .content .formSection textarea.formControl {
+    resize: none;
+    padding: 10px 15px;
+}
+.fourthWrap .content .formSection form .formGroup {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.fourthWrap .content .formSection form .formGroup label {
+    position: absolute;
+    cursor: pointer;
+    padding:10px 10px 10px 15px;
+}
+.fourthWrap .content .formSection form .buttonSend {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 0 2px 4px 0 rgba(14,30,37,.12);
+    border:none;
+    background-color: #8e44ad;
+    border-radius: 3px;
+    color: #fff;
+}
+.fourthWrap .content .formSection form .buttonSend:hover {
+    background-color: #9b59b6;
+}
+/* Fives Wrap */
+.fivesWrap {
+    background-color: #fff;
+    padding: 80px 0;
+}
+.fivesWrap .headContent {
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.fivesWrap .headContent a {
+    text-decoration: none;
+}
+.fivesWrap .content {
+    display: flex;
+    justify-content: center;
+}
+.fivesWrap .content a {
+    display: inline-flex;
+    padding-right: 15px;
+    flex-wrap: wrap;
+}
+.fivesWrap .content a:last-child {
+    padding-right: 0;
+}
+.fivesWrap .content .myInstagramImage img {
+    object-fit: cover;
+    width: 180px;
+    height: 180px;
+    border-radius: 3px;
+}
+.fivesWrap .content .contentPreload {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.fivesWrap .content .boxbeforeFetch {
+    display: inline-flex;
+    padding-right: 15px;
+    flex-wrap:wrap;
+}
+.fivesWrap .content .boxbeforeFetch div {
+    width:180px;
+    height:180px;
+    border-radius: 3px;
+}
+.fivesWrap .content .boxbeforeFetch:last-child {
+    padding-right: 0;
+}
+
+/* FooterWrap */
+.footerWrap {
+    padding: 50px 0 30px 0;
+    background-color: #ff5e62;
+}
+.footerWrap .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+.footerWrap .content div:last-child {
+    text-align: right;
+}
+.footerWrap .content a {
+    text-decoration: underline;
+    color:#fff;
+}
+
+@keyframes preloads {
+    0%{
+        background-position: -468px 0
+    }
+    100%{
+        background-position: 468px 0
+    }
+}
+
+.preloads-img {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: preloads;
+    animation-timing-function: linear;
+    background: #f6f7f8;
+    background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+    background-size: 800px 104px;
+    height: 96px;
+    position: relative;
+}
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 400px !important;
+    }
+    .firstWrap .contentFirstWrap h1 {
+        font-size: 50px !important;
+    }
+    .firstWrap .contentFirstWrap h4 {
+        font-size: 20px !important;
+    }
+    .firstWrap .contentFirstWrap p {
+        line-height: 25px;
+    }
+    .secondWrap .content .webTools {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-flow: row wrap;
+    }
+    .secondWrap .content .webTools div {
+        margin: 0;
+    }
+    .footerWrap .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footerWrap .content div:last-child {
+        text-align: center;
+        margin-top: 10px;
+    }
+    .secondWrap .content .webTools div {
+        border-radius: 0px;
+    }
+}
+@media (max-width: 768px) {
+    .rocketMoon {
+        display: none !important;
+    }
+    .firstWrap .contentFirstWrap h1 {
+        font-size: 60px;
+    }
+    .firstWrap .contentFirstWrap h4 {
+        font-size: 25px;
+    }
+    .firstWrap .contentFirstWrap p {
+        line-height: 25px;
+    }
+    .firstWrap #leftCircle {
+        display: none;
+    }
+    .thirdWrap .contentProject .left, .thirdWrap .contentProject .right {
+        margin: 30px 0;
+    }
+    .thirdWrap .contentProject .titleProject h1 {
+        font-size: 35px !important;
+    }
+    /* Right Project */
+    .thirdWrap .contentProject .right .titleProject {
+        position: absolute;
+        width: 100%;
+        margin-right: 0;
+        top:0;
+    }
+    .thirdWrap .contentProject .right .titleProject .linkProject {
+        display: flex;
+        margin-top: 20px;
+    }
+    .thirdWrap .contentProject .right .titleProject .linkProject a {
+        padding: 0 15px;
+    }
+    .thirdWrap .contentProject .right .titleProject .linkProject a:first-child {
+        padding-left: 0px;
+    }
+    .thirdWrap .contentProject .right #coverProject, .thirdWrap .contentProject .left #coverProject {
+        width: 100%;
+        margin-top: 170px;
+    }
+    /* Left Project */
+    .thirdWrap .contentProject .left .titleProject {
+        position: absolute;
+        width: 100%;
+        margin-left: 0;
+        top:0;
+    }
+    .thirdWrap .contentProject .left .titleProject .linkProject {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 20px;
+    }
+    .thirdWrap .contentProject .left .titleProject .linkProject a {
+        padding: 0 15px;
+    }
+    .thirdWrap .contentProject .left .titleProject .linkProject a:first-child {
+        padding-right: 0px;
+    }
+    .thirdWrap .contentProject .left #coverProject, .thirdWrap .contentProject .right #coverProject {
+        width: 100%;
+        height: 250px;
+        margin-top: 170px;
+    }
+    .fivesWrap .content {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-flow: row wrap;
+    }
+    .fivesWrap .content .myInstagramImage {
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 992px) {
+    .rocketMoon {
+        display: none !important;
+    }
+    .firstWrap .contentFirstWrap p {
+        line-height: 25px;
+    }
+    nav a {
+        color: #fff;
+    }
+    nav a:hover {
+        color: #fff;
+    }
+}
+@media (max-width: 1366px) {
+    .firstWrap .contentFirstWrap p {
+        line-height: 25px;
+    }
+    .container {
+        max-width: 1000px;
+    }
+}
+@media (min-width: 1400px) {
+    .container {
+        width:1500px;
+    }
+    .firstWrap .rocketMoon {
+        display: none;
+    }
+}
