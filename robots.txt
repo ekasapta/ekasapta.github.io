@@ -3,4 +3,3 @@ Disallow: /assets/img/Background.svg
 Disallow: /assets/img/backgroundabstract.png
 Disallow: /assets/img/LeftCircle.svg
 Disallow: /assets/img/RightCircle.svg
-Disallow: /assets/img/projects/coverInikos.jpg
