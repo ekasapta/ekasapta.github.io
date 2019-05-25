@@ -18,9 +18,14 @@
     <meta property="og:site_name" content="ekasapta.net">
 
     <meta name="google-site-verification" content="noKjbtI09gGrnutoQoC-Rs6OlU_NE8joXExFGt2RsJc" />
+    <meta name="user-id" content="2068517782" />
+    <meta name="client-id" content="25a357e32764438f9c1ea7c29e3e51d4" />
 
     <link rel="icon" sizes="192x192" href="assets/img/favicon.jpg?_v=20190127">
-    <link rel="stylesheet" href="assets/css/app.css?_v=20190520">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/app.min.css?_v=20190525">
+    <link rel="stylesheet" href="assets/css/fa/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,600">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script type='application/ld+json'>
@@ -58,14 +63,14 @@
         <div class="container">
             <div class="parentNav">
                 <li><a href="https://www.facebook.com/ekasapta17"><i class="fa fa-facebook fa-lg"></i></a></li>
-                <li><a href="https://github.com/ekasapta"><i class="fa fa-github fa-lg"></i></a></li>
                 <li><a href="https://www.instagram.com/ekasapta17"><i class="fa fa-instagram fa-lg"></i></a></li>
+                <li><a href="https://github.com/ekasapta"><i class="fa fa-github fa-lg"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/ekasapta/"><i class="fa fa-linkedin fa-lg"></i></a></li>
             </div>
         </div>
     </nav>
 
     <section class="firstWrap">
-        <!-- <img src="assets/img/LeftCircle.svg" alt="Left Circle - ekasapta.net" id="leftCircle"> -->
         <div class="container">
             <div class="contentFirstWrap" data-scroll="in">
                 <div>
@@ -167,6 +172,7 @@
                     If you want to quick response there's some platform for contact me
                         <div class="subSectionPlatform">
                             <li><a href="https://www.facebook.com/messages/t/ekasapta17" data-toggle="tooltip" data-placement="top" title="Contact on Messanger Facebook"><i class="fa fa-facebook-official fa-lg"></i></a></li>
+                            <li><a href="javascript:void(0);" onclick="window.open('mailto:ekasapta747@gmail.com?subject=ContactForm&body=Hello, Eka');" data-toggle="tooltip" data-placement="top" title="Contact on Email"><i class="fa fa-envelope fa-lg"></i></a></li>
                             <li><a href="https://www.instagram.com/ekasapta17" data-toggle="tooltip" data-placement="top" title="Contact on DM Instagram"><i class="fa fa-instagram fa-lg"></i></a></li>
                         </div>
                 </div>
@@ -174,7 +180,7 @@
                     <form action="#" method="post" id="formContact">
                         <div id="alertForm"></div>
                         <div class="formGroup">
-                            <label for="fullName"><i class="fa fa-user fa-lg"></i></label>
+                            <label for="fullname"><i class="fa fa-user fa-lg"></i></label>
                             <input type="text" name="fullname" id="fullname" placeholder="Full Name" class="formControl" autocomplete="off">
                         </div>
                         <div class="formGroup">
@@ -219,7 +225,7 @@
             <div class="content">
                 <div>Eka Sapta &copy; <span id="year"></span> &middot; version : 1.1.0</div>
                 <div>
-                    Made in Denpasar, Bali. <br>Hosted on <a href="https://pages.github.com/?from=https://ekasapta.net">Github Pages</a>.
+                    Made in Denpasar, Bali. <br>Hosted on <a href="https://pages.github.com/?from=https%3A%2F%2Fekasapta.net%2F">Github Pages</a>.
                 </div>
             </div>
         </div>
@@ -255,15 +261,7 @@
     </script>
 
     <script type="text/javascript">
-        var feed = new Instafeed({
-            target: 'contentInstagram',
-            get: 'user',
-            clientId: '25a357e32764438f9c1ea7c29e3e51d4',
-            accessToken: '2068517782.25a357e.51f960f5e2d84fc3a11a5a88b07eef0c',
-            userId: 2068517782,
-            limit: 5,
-            sortBy: 'most-recent',
-            resolution: 'standard_resolution',
+        var feed = new Instafeed({ target: 'contentInstagram', get: 'user', clientId: document.getElementsByTagName('meta')[14].getAttribute('content'), accessToken: '2068517782.25a357e.51f960f5e2d84fc3a11a5a88b07eef0c', userId: document.getElementsByTagName('meta')[13].getAttribute('content'), limit: 5, sortBy: 'most-recent', resolution: 'standard_resolution',
             template: '<a href="{{link}}" data-id="{{id}}" target="_blank"><div class="myInstagramImage"><div class="overlayHover">{{caption}}</div><img src="{{image}}" alt="{{caption}}"></div></a>',
             after: function() {
                 $(".contentPreload").hide();
