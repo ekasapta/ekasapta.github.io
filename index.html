@@ -17,9 +17,7 @@
     <meta property="article:publisher" content="https://www.facebook.com/ekasapta17">
     <meta property="og:site_name" content="ekasapta.net">
 
-    <meta name="google-site-verification" content="noKjbtI09gGrnutoQoC-Rs6OlU_NE8joXExFGt2RsJc" />
-    <meta name="user-id" content="2068517782" />
-    <meta name="client-id" content="25a357e32764438f9c1ea7c29e3e51d4" />
+    <meta name="google-site-verification" content="noKjbtI09gGrnutoQoC-Rs6OlU_NE8joXExFGt2RsJc" />    
 
     <link rel="icon" sizes="192x192" href="assets/img/favicon.jpg?_v=20190127">
     <link rel="stylesheet" href="assets/css/main.css">
@@ -207,16 +205,7 @@
         <div class="container" data-scroll="out">
             <div class="headContent">
                 My Activity on <a href="https://www.instagram.com/ekasapta17">Instagram</a>
-            </div>
-            <div class="content" id="contentInstagram">
-                <div class="contentPreload">
-                    <div class="boxbeforeFetch"><div class="preloads-img"></div></div>
-                    <div class="boxbeforeFetch"><div class="preloads-img"></div></div>
-                    <div class="boxbeforeFetch"><div class="preloads-img"></div></div>
-                    <div class="boxbeforeFetch"><div class="preloads-img"></div></div>
-                    <div class="boxbeforeFetch"><div class="preloads-img"></div></div>
-                </div>
-            </div>
+            </div>            
         </div>
     </section>
 
@@ -234,7 +223,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
     <script src="assets/js/main.min.js?_v=20190127"></script>
-    <script src="assets/js/instafeed.min.js?_v=20190127"></script>
     <script type="text/javascript">
         $(function () {
             $('[data-toggle="tooltip"]').tooltip();
@@ -258,16 +246,6 @@
             }
 
         });
-    </script>
-
-    <script type="text/javascript">
-        var feed = new Instafeed({ target: 'contentInstagram', get: 'user', clientId: document.getElementsByTagName('meta')[14].getAttribute('content'), accessToken: '2068517782.25a357e.51f960f5e2d84fc3a11a5a88b07eef0c', userId: document.getElementsByTagName('meta')[13].getAttribute('content'), limit: 5, sortBy: 'most-recent', resolution: 'standard_resolution',
-            template: '<a href="{{link}}" data-id="{{id}}" target="_blank"><div class="myInstagramImage"><div class="overlayHover">{{caption}}</div><img src="{{image}}" alt="{{caption}}"></div></a>',
-            after: function() {
-                $(".contentPreload").hide();
-            }
-        });
-        feed.run();
     </script>
 </body>
 </html>
