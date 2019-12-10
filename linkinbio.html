@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Link in Bio | Eka Sapta</title>
+    <link rel="icon" sizes="192x192" href="assets/img/favicon.jpg?_v=20190127">
+    <style>
+        * {
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body {
+            background-color: antiquewhite;
+        }
+        .flex img {
+            width: 100%;
+        }
+        .flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .flex ul {
+            display: flex;
+            flex-direction: column;
+            width: 250px;
+        }
+        .flex ul > li:not(.devider) {
+            list-style: none;
+            margin-bottom: 10px;
+        }
+        .flex ul > li > a {
+            text-decoration: none;
+            color: #000;
+            border: 2px solid #000;
+            padding: 10px 0;
+            width: 100%;
+            display: block;
+            text-align: center;
+            font-size: 13px;
+        }
+        .flex ul > li > a:hover {
+            background-color: #7971ff;
+            color: #fff;
+            transition: all .2s;
+            font-weight: bold;
+        }
+        .devider {
+            background-color: #000;
+            height: 1px;
+            width: 100%;
+            margin: 25px 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .devider:nth-child(2)::before {
+            content: "My Website";
+            background-color: antiquewhite;
+            width: 100px;
+            text-align: center;
+        }
+        .devider:nth-child(5)::before {
+            content: "Social Media";
+            background-color: antiquewhite;
+            width: 100px;
+            text-align: center;
+        }
+        .footer {
+            color: #777;
+            text-align: center;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="flex">
+        <ul>
+            <img src="assets/img/60c58ceeb22a3f1a23a706a9cdfe028b.svg" alt="url-link-image">
+            <li class="devider"></li>
+            <li>
+                <a href="/">My Portfolio Website</a>
+            </li>
+            <li>
+                <a href="/blog">My Blog</a>
+            </li>
+            <li class="devider"></li>
+            <li>
+                <a href="https://github.com/ekasapta">Github</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/ekasapta/">Linked in</a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/ekasapta17">Facebook</a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/ekasapta17/">Instagram</a>
+            </li>
+            <li>
+                <a href="https://twitter.com/ekasapta747">Twitter</a>
+            </li>
+            <span class="footer"><small>Made with ❤️ in Denpasar, Bali.</small></span>
+        </ul>
+    </div>
+
+</body>
+</html>
