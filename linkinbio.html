@@ -7,6 +7,7 @@
 
     <title>Link in Bio | Eka Sapta</title>
     <link rel="icon" sizes="192x192" href="assets/img/favicon.jpg?_v=20190127">
+    <link rel="stylesheet" href="assets/css/aos.css">
     <style>
         * {
             padding:0;
@@ -92,33 +93,37 @@
 
     <div class="flex">
         <ul>
-            <img src="assets/img/60c58ceeb22a3f1a23a706a9cdfe028b.svg" alt="url-link-image">
+            <img src="assets/img/60c58ceeb22a3f1a23a706a9cdfe028b.svg" alt="url-link-image" data-aos="zoom-in">
             <li class="devider"></li>
-            <li>
+            <li data-aos="fade-left" data-aos-delay="100">
                 <a href="/">My Portfolio</a>
             </li>
-            <li>
+            <li data-aos="fade-right" data-aos-delay="200">
                 <a href="/blog">My Blog</a>
             </li>
             <li class="devider"></li>
-            <li>
+            <li data-aos="fade-left" data-aos-delay="300">
                 <a href="https://github.com/ekasapta">Github</a>
             </li>
-            <li>
+            <li data-aos="fade-right" data-aos-delay="400">
                 <a href="https://www.linkedin.com/in/ekasapta/">LinkedIn</a>
             </li>
-            <li>
+            <li data-aos="fade-left" data-aos-delay="500">
                 <a href="https://www.facebook.com/ekasapta17">Facebook</a>
             </li>
-            <li>
+            <li data-aos="fade-right" data-aos-delay="600">
                 <a href="https://www.instagram.com/ekasapta17/">Instagram</a>
             </li>
-            <li>
+            <li data-aos="fade-left" data-aos-delay="700">
                 <a href="https://twitter.com/ekasapta747">Twitter</a>
             </li>
             <span class="footer"><small>Made with ❤️ in Denpasar, Bali.</small></span>
         </ul>
     </div>
 
+    <script src="assets/js/aos.js"></script>
+    <script>
+        AOS.init({once:true});
+    </script>
 </body>
 </html>
