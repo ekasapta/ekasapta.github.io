@@ -1,0 +1,1 @@
+Gaskan hacktober pull request yang ke 1
