@@ -21,7 +21,7 @@
 
     <link rel="icon" sizes="192x192" href="assets/img/favicon.jpg?_v=20190127">
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/app.min.css?_v=20200929">
+    <link rel="stylesheet" href="assets/css/app.min.css?_v=20200930">
     <link rel="stylesheet" href="assets/css/aos.css">
     <link rel="stylesheet" href="assets/css/fa/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,600">
@@ -53,7 +53,26 @@
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-NX5QDRX');</script>    
-    <style> .mySpotify { font-weight: bold; } </style>
+
+    <style> 
+        .mySpotify { font-weight: bold; } 
+        .rocketMoon{
+            animation-name: upanddown;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes upanddown{
+            0%{
+                transform: translateY(-15%);
+            }
+            50%{
+                transform: translateY(5%);
+            }
+            100%{
+                transform: translateY(-15%);
+            }
+        }
+    </style>
 </head>
 <body>    
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NX5QDRX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -93,7 +112,7 @@
                 <div>There's some my Achievements</div>
 
                 <div class="groupAchievement" data-aos="fade-left" data-aos-delay="100">
-                    <span>Runner Up Web App Competition ( ITECHNO CUP 2019 )</span><br>
+                    <span>Runner Up Web App Competition (ITECHNO CUP 2019)</span><br>
                     <span>organized by the ICT department of the Jakarta State Polytechnic</span><br>
                     <span>held on April 1, 2019.</span>
                 </div>
@@ -111,11 +130,11 @@
             <div class="content" data-aos="zoom-in">
                 <h4 class="titleSection">Skills</h4>
                 <div>Over 5 years I'm using this languages and other technology for creating website.</div>
-                <div class="webTools">
-                    <div data-aos="fade-up" data-aos-delay="100">PHP</div>
-                    <div data-aos="fade-up" data-aos-delay="200">LARAVEL</div>
-                    <div data-aos="fade-up" data-aos-delay="300">VUE.JS</div>
-                    <div data-aos="fade-up" data-aos-delay="400">MYSQL</div>
+                <div id="boxWebTools" class="webTools">
+                    <div class="item" draggable="true" data-aos="fade-up" data-aos-delay="100" style="cursor: grab;">PHP</div>
+                    <div class="item" draggable="true" data-aos="fade-up" data-aos-delay="200" style="cursor: grab;">LARAVEL</div>
+                    <div class="item" draggable="true" data-aos="fade-up" data-aos-delay="300" style="cursor: grab;">VUE.JS</div>
+                    <div class="item" draggable="true" data-aos="fade-up" data-aos-delay="400" style="cursor: grab;">MYSQL</div>
                 </div>
             </div>
         </div>
@@ -249,6 +268,6 @@
             AOS.init({once:true});
         });
     </script>
-    <!-- ini komen kawan :) -->
+  <script src="assets/js/drag.js"></script>
 </body>
 </html>
