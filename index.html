@@ -63,13 +63,13 @@
         }
         @keyframes upanddown{
             0%{
-                transform: translateY(-15%);
+                transform: translateY(-13%);
             }
             50%{
-                transform: translateY(5%);
+                transform: translateY(3%);
             }
             100%{
-                transform: translateY(-15%);
+                transform: translateY(-13%);
             }
         }
     </style>
@@ -109,7 +109,7 @@
         <div class="container">
             <div class="content" data-aos="fade-up">
                 <h4 class="titleSection">Achievement</h4>
-                <div>There's some my Achievements</div>
+                <div>There are some of my Achievements</div>
 
                 <div class="groupAchievement" data-aos="fade-left" data-aos-delay="100">
                     <span>Runner Up Web App Competition (ITECHNO CUP 2019)</span><br>
@@ -186,7 +186,7 @@
             <div class="content" data-aos="fade-up">
                 <h4 class="titleSection">Contact Me</h4>
                 <div class="subSection">
-                    If you want to quick response there's some platform for contact me
+                    If you want to quick response there are some platforms to contact me
                         <div class="subSectionPlatform">
                             <li data-aos="fade-up" data-aos-delay="100"><a href="https://www.facebook.com/messages/t/ekasapta17" data-toggle="tooltip" data-placement="top" title="Contact on Messanger Facebook"><i class="fa fa-facebook-official fa-lg"></i></a></li data-aos="fade-up" data-aos-delay="100">
                             <li data-aos="fade-up" data-aos-delay="200"><a href="javascript:void(0);" onclick="window.open('mailto:hi@ekasapta.id?subject=ContactForm&body=Hello, Eka');" data-toggle="tooltip" data-placement="top" title="Contact on Email"><i class="fa fa-envelope fa-lg"></i></a></li>
@@ -243,14 +243,18 @@
     <script src="assets/js/main.min.js?_v=20190127"></script>
     <script src="assets/js/aos.js"></script>
     <script type="text/javascript">
+        
+        
         $(function () {
             $('[data-toggle="tooltip"]').tooltip();
         });
+
 
         var d = new Date();
         var n = d.getFullYear();
 
         $('#year').html(n);
+        
 
         var fixmeTop = $('nav').offset().top;
         $(window).scroll(function() {
@@ -264,6 +268,7 @@
             }
 
         });
+        
         $(document).ready(function() {
             AOS.init({once:true});
         });
